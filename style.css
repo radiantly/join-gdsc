@@ -1,38 +1,18 @@
 @font-face {
   font-family: "Google Sans";
-  src: url(fonts/GoogleSans-Regular-v1.27.ttf);
+  src: url(fonts/GoogleSans-Regular-v1.27.woff2);
 }
 
 @font-face {
   font-family: "Google Sans";
-  src: url(fonts/GoogleSans-Italic-v1.27.ttf);
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Google Sans";
-  src: url(fonts/GoogleSans-Medium-v1.27.ttf);
+  src: url(fonts/GoogleSans-Medium-v1.27.woff2);
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Google Sans";
-  src: url(fonts/GoogleSans-MediumItalic-v1.27.ttf);
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "Google Sans";
-  src: url(fonts/GoogleSans-Bold-v1.27.ttf);
+  src: url(fonts/GoogleSans-Bold-v1.27.woff2);
   font-weight: 700;
-}
-
-@font-face {
-  font-family: "Google Sans";
-  src: url(fonts/GoogleSans-BoldItalic-v1.27.ttf);
-  font-weight: 700;
-  font-style: italic;
 }
 
 :root {
