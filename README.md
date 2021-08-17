@@ -1,1 +1,1 @@
-# join-gdsc
+# Join GDSC
