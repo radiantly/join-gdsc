@@ -24,6 +24,7 @@
   --dark-gray: #4f4f4f;
   --gray: #666666;
   --light-gray: #878787;
+  --lighter-gray: #a8a8a8;
 }
 
 *,
@@ -120,15 +121,29 @@ body {
 }
 
 footer {
-  color: var(--light-gray);
   font-weight: 500;
   font-size: 20px;
   padding: 30px 0;
 }
 
+footer a {
+  color: var(--light-gray);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+footer a:hover {
+  color: var(--lighter-gray);
+}
+
 footer img {
   height: 20px;
   padding: 0 1px;
+  transition: opacity 0.2s ease;
+}
+
+footer a:hover img {
+  opacity: 0.7;
 }
 
 @media screen and (max-width: 1080px) {
