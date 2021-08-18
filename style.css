@@ -116,6 +116,7 @@ body {
   font-family: inherit;
   transition: all 0.2s ease;
   border: 4px solid var(--blue);
+  user-select: none;
 }
 
 .content .btn.apply {
