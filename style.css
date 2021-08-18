@@ -148,23 +148,19 @@ footer {
 }
 
 footer a {
+  opacity: 1;
   color: var(--light-gray);
   text-decoration: none;
   transition: all 0.2s ease;
 }
 
 footer a:hover {
-  color: var(--lighter-gray);
+  opacity: 0.8;
 }
 
 footer img {
   height: 20px;
   padding: 0 1px;
-  transition: opacity 0.2s ease;
-}
-
-footer a:hover img {
-  opacity: 0.7;
 }
 
 @media screen and (max-width: 1080px) {
