@@ -1,6 +1,8 @@
 # Join GDSC
 
-Website allowing applications to the core team of GDSC. Registrations close on 25th August, 2021.
+Website allowing applications to the core team of GDSC. Registrations are closed for now.
+
+<img src="images/demo.png" alt="Site screenshot" width="300" />
 
 ### License
 
