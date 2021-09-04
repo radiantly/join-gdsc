@@ -21,29 +21,46 @@ const parseHash = () =>
   }, {});
 
 const { access_token, state } = parseHash();
-console.log(location.hash);
 
+// If redirecting back from an OAuth request, these fields are populated.
 if (access_token && state) {
   const nick = atob(state);
   nameInp.value = nick;
   nameInp.disabled = true;
   submitBtn.classList.add("disabled");
   submitBtn.textContent = "Processing";
+
+  // Retrieve user id
   fetch("https://discord.com/api/v9/users/@me", {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
   })
     .then((r) => r.json())
-    .then(({ id }) =>
-      fetch("/api/join-discord", {
+    .then(({ id, avatar }) => {
+      // Add avatar to DOM
+      const avatarURL = `https://cdn.discordapp.com/avatars/${id}/${avatar}.jpg?size=64`;
+      document
+        .querySelector(".row")
+        .insertAdjacentHTML("afterbegin", `<img src="${avatarURL}" />`);
+
+      // Add user to server with their name as nickname
+      return fetch("/api/join-discord", {
         method: "POST",
         body: JSON.stringify({
           access_token,
           nick,
           id,
         }),
-      })
-    )
-    .then(console.log);
+      });
+    })
+    .then((response) => {
+      if (response.status === 201) {
+        submitBtn.textContent = "Added to server";
+      } else if (response.status === 204) {
+        submitBtn.textContent = "Already added";
+      } else {
+        submitBtn.textContent = "Error";
+      }
+    });
 }

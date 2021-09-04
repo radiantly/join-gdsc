@@ -25,6 +25,10 @@ exports.handler = async function (event, context) {
   if (!access_token || !nick || !id)
     return jsonError(400, "All required parameters are not present");
 
+  // Ensure that nickname does not contain disallowed characters
+  if (!/^[a-z .'-]{3,32}$/i.test(nick))
+    return jsonError(400, "Nickname contains disallowed characters.");
+
   try {
     const response = await fetch(
       `https://discord.com/api/v9/guilds/${process.env.GUILD_ID}/members/${id}`,
@@ -37,6 +41,7 @@ exports.handler = async function (event, context) {
         body: JSON.stringify({
           access_token,
           nick,
+          roles: ["883727061653528598"],
         }),
       }
     );
