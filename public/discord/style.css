@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Google Sans";
+  src: url(/fonts/GoogleSans-Regular-v1.27.woff2);
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(/fonts/GoogleSans-Italic-v1.27.woff2);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(/fonts/GoogleSans-Medium-v1.27.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(/fonts/GoogleSans-Bold-v1.27.woff2);
+  font-weight: 700;
+}
+
+:root {
+  --red: #ea4335;
+  --blue: #4285f4;
+  --yellow: #fbbc04;
+  --green: #34a853;
+  --light-blue: #1f6ff1;
+  --dark-gray: #4f4f4f;
+  --gray: #666666;
+  --light-gray: #878787;
+  --lighter-gray: #a8a8a8;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Google Sans", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 15vh;
+  max-width: 95vw;
+  text-align: center;
+}
+
+.logo {
+  max-width: 90vw;
+  margin: min(5vh, 5vw) 0;
+  height: 200px;
+  transition: all 0.2s ease;
+}
+
+.tagline {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--gray);
+}
+
+.name {
+  font-size: 40px;
+  text-align: center;
+  border: none;
+  border-bottom: 3px solid #999;
+  width: min(600px, 90vw);
+  padding: 15px;
+  margin: 50px 0;
+  background-color: #f3f3f3;
+  border-radius: 5px 5px 0 0;
+  outline: none;
+  color: #555;
+}
+
+.name::placeholder {
+  color: #adadad;
+  font-style: italic;
+  opacity: 1;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 210px;
+  outline: none;
+  font-size: 22px;
+  border-radius: 90px;
+  cursor: pointer;
+  padding: 11px 0;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  border: 4px solid var(--blue);
+  user-select: none;
+  background-color: var(--blue);
+  font-weight: 500;
+}
+
+.btn.disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+  .tagline {
+    font-size: 28px;
+  }
+  .name {
+    font-size: 28px;
+    margin: 40px 0;
+  }
+}

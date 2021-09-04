@@ -2,7 +2,7 @@
 
 Website allowing applications to the core team of GDSC. Registrations are closed for now.
 
-<img src="images/demo.png" alt="Site screenshot" width="300" />
+<img src="misc/demo.png" alt="Site screenshot" width="300" />
 
 ### License
 
