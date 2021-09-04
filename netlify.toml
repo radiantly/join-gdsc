@@ -1,5 +1,6 @@
 [build]
   publish = "public/"
+  command = "cd functions && npm i"
 
 [functions]
   directory = "functions/"
@@ -9,4 +10,3 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
-  
