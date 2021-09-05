@@ -41,7 +41,7 @@ exports.handler = async function (event, context) {
         body: JSON.stringify({
           access_token,
           nick,
-          roles: ["883727061653528598"],
+          roles: [process.env.SET_ROLE_ID],
         }),
       }
     );
