@@ -39,10 +39,12 @@ if (access_token && state) {
     .then((r) => r.json())
     .then(({ id, avatar }) => {
       // Add avatar to DOM
-      const avatarURL = `https://cdn.discordapp.com/avatars/${id}/${avatar}.jpg?size=64`;
-      document
-        .querySelector(".row")
-        .insertAdjacentHTML("afterbegin", `<img src="${avatarURL}" />`);
+      if (avatar) {
+        const avatarURL = `https://cdn.discordapp.com/avatars/${id}/${avatar}.jpg?size=64`;
+        document
+          .querySelector(".row")
+          .insertAdjacentHTML("afterbegin", `<img src="${avatarURL}" />`);
+      }
 
       // Add user to server with their name as nickname
       return fetch("/api/join-discord", {
