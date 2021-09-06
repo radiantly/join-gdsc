@@ -10,3 +10,8 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+  
+[[redirects]]
+  from = "/hello-world"
+  to = "https://gdsc.community.dev/j/aq9vjsnk9hb9d/"
+  status = 302
