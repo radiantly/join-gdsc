@@ -15,3 +15,8 @@
   from = "/hello-world"
   to = "https://gdsc.community.dev/j/aq9vjsnk9hb9d/"
   status = 302
+  
+[[redirects]]
+  from = "/30daysofcloud"
+  to = "https://gdsc.community.dev/e/m8vjnf/"
+  status = 302
