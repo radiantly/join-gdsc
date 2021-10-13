@@ -20,3 +20,8 @@
   from = "/30daysofcloud"
   to = "https://gdsc.community.dev/e/m8vjnf/"
   status = 302
+  
+ [[redirects]]
+  from = "/cybersec101"
+  to = "https://gdsc.community.dev/e/m4e2pt/"
+  status = 302
