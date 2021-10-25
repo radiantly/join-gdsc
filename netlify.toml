@@ -21,7 +21,23 @@
   to = "https://gdsc.community.dev/e/m8vjnf/"
   status = 302
   
- [[redirects]]
+[[redirects]]
   from = "/cybersec101"
   to = "https://gdsc.community.dev/e/m4e2pt/"
   status = 302
+
+[[redirects]]
+  from = "/letsgitstartedform"
+  to = "https://forms.office.com/r/kwqaYkC1jK"
+  status = 302
+
+[[redirects]]
+  from = "/letsgitstarted"
+  to = "https://gdsc.community.dev/e/mnmrnx/"
+  status = 302
+
+# Default redirect. Put new redirects above this line!
+[[redirects]]
+  from = "/*"
+  to = "https://the-redirector.senorita.workers.dev/:splat"
+  status = 200
