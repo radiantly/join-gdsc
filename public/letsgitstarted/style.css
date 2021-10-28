@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Google Sans";
+  src: url(/fonts/GoogleSans-Regular-v1.27.woff2);
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(/fonts/GoogleSans-Italic-v1.27.woff2);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(/fonts/GoogleSans-Medium-v1.27.woff2);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(/fonts/GoogleSans-Bold-v1.27.woff2);
+  font-weight: 700;
+}
+
+:root {
+  --red: #ea4335;
+  --blue: #4285f4;
+  --yellow: #fbbc04;
+  --green: #34a853;
+  --light-blue: #1f6ff1;
+  --dark-gray: #4f4f4f;
+  --gray: #666666;
+  --light-gray: #878787;
+  --lighter-gray: #a8a8a8;
+}
+
+.red {
+  color: var(--red);
+}
+.yellow {
+  color: var(--yellow);
+}
+.blue {
+  color: var(--blue);
+}
+.green {
+  color: var(--green);
+}
+.lighter-gray {
+  color: var(--lighter-gray);
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: "Google Sans", sans-serif;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 95vw;
+  text-align: center;
+}
+
+.logo {
+  max-width: 90vw;
+  margin: min(5vh, 5vw) 0;
+  height: 200px;
+  transition: all 0.2s ease;
+}
+
+.tagline {
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--gray);
+}
+
+.subtagline {
+  font-weight: 500;
+  font-size: 26px;
+  color: var(--red);
+  margin-top: 10px;
+}
+
+.track {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #666;
+}
+
+.track .header {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.track p {
+  margin-top: 0;
+}
+
+.track a {
+  text-decoration: underline dotted;
+  color: inherit;
+}
+
+.track a:hover {
+  text-decoration: underline;
+}
