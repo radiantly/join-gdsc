@@ -1,6 +1,6 @@
 # Join GDSC
 
-Website allowing applications to the core team of GDSC. Registrations are closed for now.
+Website allowing applications to the core team of GDSC. Applications are now open!
 
 <img src="misc/demo.png" alt="Site screenshot" width="300" />
 
