@@ -167,6 +167,12 @@ footer img {
   padding: 0 1px;
 }
 
+@media screen and (max-height: 850px) and (min-width: 600px) {
+  .logo {
+    height: 150px
+  }  
+}
+
 @media screen and (max-width: 1080px) {
   .content {
     text-align: center;
@@ -191,7 +197,8 @@ footer img {
   .content .para {
     font-size: 20px;
     max-width: 90vw;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .content .row {
     flex-direction: column-reverse;
